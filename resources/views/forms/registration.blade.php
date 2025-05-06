@@ -8,7 +8,8 @@
 </head>
 <body>
     <h1>User Regsitration Form</h1>
-    <form action="">
+    <form action= "{{route('registration.post')}}" method="POST" enctype="multipart/form-data">
+        @csrf
         <label for="name">Name:</label>
         <input type="text" id="name" name="name">
 
